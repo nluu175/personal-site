@@ -55,5 +55,5 @@
 }
 
 .description-container {
-  animation: bobbingAnim 1s ease; /* You can adjust the duration and timing function as needed */
+  animation: bobbingAnim 0.5s ease; /* You can adjust the duration and timing function as needed */
 }
