@@ -1,0 +1,30 @@
+.social-bar-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 0;
+}
+
+.item {
+  margin-right: 1rem;
+}
+
+a {
+  font-size: 2rem;
+  color: rgb(119, 119, 121);
+}
+
+a:hover {
+  color: rgba(180, 154, 175, 0.779);
+}
+
+/* a is the child of item */
+.item a {
+  display: inline-block; /* Ensures the anchor takes the size of the icon */
+  transition: transform 0.2s ease-in-out; /* Apply transition to transform property */
+}
+
+.item a:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}

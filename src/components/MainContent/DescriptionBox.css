@@ -1,0 +1,59 @@
+.project-item {
+  display: inline-block; /* Ensures the anchor takes the size of the icon */
+  transition: transform 0.2s ease-in-out; /* Apply transition to transform property */
+}
+
+.project-item:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/* fade in Keyframe */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* tZ KeyFrame */
+@keyframes bobbingAnim {
+  0% {
+   transform: translate(0px, 0px) rotateZ(0.001deg);  
+   animation-timing-function:ease-in-out
+  }
+
+  50% {
+    transform: translate(0px, 12px) rotateZ(0.001deg);
+    animation-timing-function:ease-in-out
+  }
+
+  100% {
+   transform: translate(0px, 0px) rotateZ(0.001deg);
+   animation-timing-function:ease-in-out
+  }
+}
+
+.description-container {
+  animation: bobbingAnim 1s ease; /* You can adjust the duration and timing function as needed */
+}

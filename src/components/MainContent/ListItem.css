@@ -1,0 +1,9 @@
+.menu-item {
+  display: inline-block; /* Ensures the anchor takes the size of the icon */
+  transition: transform 0.2s ease-in-out; /* Apply transition to transform property */
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

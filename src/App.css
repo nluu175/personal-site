@@ -1,0 +1,31 @@
+body {
+  background-color: #1d1d20;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: min(1600px, 85vw);
+  margin: 30px;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* BORDER ----------------- */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
