@@ -33,7 +33,7 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
 
   const h1Style = {
     textAlign: "left",
-    fontSize: "3rem",
+    fontSize: "4rem",
   };
 
   const detailBoxStyle = {
@@ -81,7 +81,7 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
       style={descriptionBoxStyle}
       ref={containerRef}
     >
-      <h1 style={h1Style}>{currentItem.title}</h1>
+      <h1 style={h1Style}>{currentItem.title}.</h1>
       <div style={detailBoxStyle}>
         <SideBorder />
         <p className="description-paragraph" style={paragraphStyle}>

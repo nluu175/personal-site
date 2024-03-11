@@ -31,7 +31,7 @@ export const mainInfo = [
     content:
       "I usually enjoy playing video games when I'm not on my favourite IDE debugging my code. " +
       "Other than that, I do love listening to music (my current favourite artist is ~wave to earth~) and cooking as well. " +
-      "Hit me up if we share the same interest or if you want to hire me (hehe!)",
+      "\nHit me up if we share the same interest or if you want to hire me (hehe!)",
   },
 ];
 
