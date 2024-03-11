@@ -39,21 +39,25 @@
 /* tZ KeyFrame */
 @keyframes bobbingAnim {
   0% {
-   transform: translate(0px, 0px) rotateZ(0.001deg);  
-   animation-timing-function:ease-in-out
+    transform: translate(0px, 0px) rotateZ(0.001deg);
+    animation-timing-function: ease-in-out;
   }
 
   50% {
     transform: translate(0px, 12px) rotateZ(0.001deg);
-    animation-timing-function:ease-in-out
+    animation-timing-function: ease-in-out;
   }
 
   100% {
-   transform: translate(0px, 0px) rotateZ(0.001deg);
-   animation-timing-function:ease-in-out
+    transform: translate(0px, 0px) rotateZ(0.001deg);
+    animation-timing-function: ease-in-out;
   }
 }
 
 .description-container {
   animation: bobbingAnim 0.5s ease; /* You can adjust the duration and timing function as needed */
+}
+
+.description-paragraph {
+  white-space: pre-line;
 }

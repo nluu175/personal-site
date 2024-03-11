@@ -84,7 +84,7 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
       <h1 style={h1Style}>{currentItem.title}</h1>
       <div style={detailBoxStyle}>
         <SideBorder />
-        <p style={paragraphStyle}>
+        <p className="description-paragraph" style={paragraphStyle}>
           {currentItem.content}
           {/* Project List */}
           {currentItem.title === "Projects" && (
