@@ -33,7 +33,7 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
 
   const h1Style = {
     textAlign: "left",
-    fontSize: "4rem",
+    fontSize: "2.5rem",
   };
 
   const detailBoxStyle = {

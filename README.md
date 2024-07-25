@@ -3,4 +3,4 @@
 
 ## TODO
 - Add support for different screen size.
-- Deploy.
+- Left border on description box change dynamically based on box height.

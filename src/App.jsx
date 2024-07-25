@@ -24,7 +24,6 @@ const App = () => {
         <TopOuterBorder />
         <SocialBar />
         <MainContent />
-
         <BottomOuterBorder />
       </div>
     </div>

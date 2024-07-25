@@ -2,16 +2,16 @@ export const mainInfo = [
   {
     title: "Welcome",
     content:
-      "Hello! Welcome to my personal website. My name is Minh and I'm currently a Junior Software Developer. " +
-      "\nIf you ever wonder, I made this page using React and pure CSS and spent several hours getting all the styling to work (CSS is a pain lol!!!). " +
-      "\nI plan to update this site as well but it will take some time (hehe!). ",
+      "My name is Matthew and I am currently a Junior Software Developer. " +
+      "\nIf you ever wonder, I made this page using React and pure CSS and spent several hours getting all the styling to work." +
+      "\nI plan to update this site as well but it will take some time!",
   },
   {
     title: "Bio",
     content:
-      "I'm an international student from Vietnam and I have recently graduated from the University of Alberta, Canada with a major in Computer Science. " +
-      "\nI'm pursuing a career in Tech and currently looking for a position in Software Development/Engineering. " +
-      "\nI do have experience with various languages and frameworks but my current focus is on Python and JavaScript.",
+      "I've recently graduated from the University of Alberta with a major in Compupter Science." +
+      "\nI'm pursuing a career in Software Development and currently looking for a position in Software Development/Engineering. " +
+      "\nI do have experience with various languages and frameworks but my current focus is on Python, JavaScript, and C#.",
   },
   {
     title: "Projects",
@@ -29,9 +29,10 @@ export const mainInfo = [
   {
     title: "Hobby",
     content:
-      "I usually enjoy playing video games when I'm not on my favourite IDE debugging my code. " +
-      "Other than that, I do love listening to music (my current favourite artist is ~wave to earth~) and cooking as well. " +
-      "\nHit me up if we share the same interest or if you want to hire me (hehe!)",
+      "I enjoy playing video games when I'm not on my favourite IDE debugging my code. " +
+      "\nOther than that, I do love listening to music and cooking as well. " +
+      "\nRecently, I've picked up Gym as a new hobby and have really enjoyed doing it. " +
+      "\nHit me up if we share the same interest or if you want to hire me. ",
   },
 ];
 
