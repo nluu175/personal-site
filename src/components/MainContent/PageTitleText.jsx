@@ -5,7 +5,7 @@ const PageTitleText = () => {
   return (
     <div className="page-title-box">
       <p>
-        WELCOME.
+        WELCOME TO MY SPACE.
         <span>My name is Matthew</span>
       </p>
     </div>

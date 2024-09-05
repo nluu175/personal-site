@@ -2,9 +2,7 @@ export const mainInfo = [
   {
     title: "Welcome",
     content:
-      "My name is Matthew and I am currently a Junior Software Developer. " +
-      "\nIf you ever wonder, I made this page using React and pure CSS and spent several hours getting all the styling to work." +
-      "\nI plan to update this site as well but it will take some time!",
+      "My name is Matthew and I am currently a Junior Software Developer. "
   },
   {
     title: "Bio",
@@ -23,17 +21,17 @@ export const mainInfo = [
     title: "Experience",
     content:
       "I had experience working as a full-stack developer in my past internships. " +
-      "The most recent experience I had was with Natural Resources Canada as an Software Developer Intern. " +
+      "\nThe most recent experience I had was with Natural Resources Canada as an Software Developer Intern. " +
       "\nPlease refer to my LinkedIn for more information. ",
   },
-  {
-    title: "Hobby",
-    content:
-      "I enjoy playing video games when I'm not on my favourite IDE debugging my code. " +
-      "\nOther than that, I do love listening to music and cooking as well. " +
-      "\nRecently, I've picked up Gym as a new hobby and have really enjoyed doing it. " +
-      "\nHit me up if we share the same interest or if you want to hire me. ",
-  },
+  // {
+  //   title: "Hobby",
+  //   content:
+  //     "I enjoy playing video games when I'm not on my favourite IDE debugging my code. " +
+  //     "\nOther than that, I do love listening to music and cooking as well. " +
+  //     "\nRecently, I've picked up Gym as a new hobby and have really enjoyed doing it. " +
+  //     "\nHit me up if we share the same interest or if you want to hire me. ",
+  // },
 ];
 
 // In order to make \n works, use white-space: pre-line;

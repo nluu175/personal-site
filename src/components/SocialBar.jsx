@@ -4,12 +4,12 @@ import "./SocialBar.css";
 
 const SocialBar = () => {
   const socialBarStyle = {
-    gridArea: "header",
+    gridArea: "social-bar",
     float: "right",
   };
 
   return (
-    <div className="bottom-outer-border" style={socialBarStyle}>
+    <div className="social-bar" style={socialBarStyle}>
       <ul className="social-bar-list">
         <li className="item">
           <a

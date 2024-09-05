@@ -1,17 +1,21 @@
 import PropTypes from "prop-types";
-import { useEffect, useRef } from "react"; // Import useEffect and useRef
+import { useEffect, useRef, useState } from "react";
 import { projectsInfo } from "../../data/data";
 import "./DescriptionBox.css";
 
-const SideBorder = () => {
+const SideBorder = ({ height }) => {
   const sideBorderStyle = {
     background: "linear-gradient(-45deg, #fafafa,#ee7752, #ff5f00)",
     animation: "gradient 3s ease infinite",
-    height: "150px",
+    height: `${height}px`, // Set the height dynamically
     width: "3px",
   };
 
   return <div style={sideBorderStyle}></div>;
+};
+
+SideBorder.propTypes = {
+  height: PropTypes.number.isRequired,
 };
 
 const ItemBorder = () => {
@@ -45,7 +49,6 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
   };
 
   const paragraphStyle = {
-    height: "150px",
     width: "100%",
     textAlign: "left",
     fontSize: "1.1em",
@@ -61,20 +64,25 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
     textDecoration: "none",
   };
 
-  const containerRef = useRef(null); // Create a ref for the description-container
+  const containerRef = useRef(null);
+  const paragraphRef = useRef(null); // Create a ref for the paragraph
+  const [sideBorderHeight, setSideBorderHeight] = useState(150); // Set a default height
 
   useEffect(() => {
+    // Update the height of SideBorder based on the paragraph's height
+    if (paragraphRef.current) {
+      setSideBorderHeight(paragraphRef.current.clientHeight);
+    }
+
     // Add animation class when currentItem changes
     containerRef.current.classList.add("animate");
     // Remove animation class after the animation ends
     setTimeout(() => {
       containerRef.current.classList.remove("animate");
-    }, 3000); // Change 3000 to match the animation duration in milliseconds
+    }, 3000); // Match this to the animation duration in milliseconds
   }, [currentItem]); // Watch for changes in currentItem
 
   return (
-    // adding key attribute here will make React anime everytime this component is rendered
-    // https://stackoverflow.com/questions/63186710/how-to-trigger-a-css-animation-on-every-time-a-react-component-re-renders
     <div
       key={currentItem.title}
       className="description-container"
@@ -83,8 +91,12 @@ const DescriptionBox = ({ currentItem, setCurrentItem }) => {
     >
       <h1 style={h1Style}>{currentItem.title}.</h1>
       <div style={detailBoxStyle}>
-        <SideBorder />
-        <p className="description-paragraph" style={paragraphStyle}>
+        <SideBorder height={sideBorderHeight} />
+        <p
+          className="description-paragraph"
+          style={paragraphStyle}
+          ref={paragraphRef}
+        >
           {currentItem.content}
           {/* Project List */}
           {currentItem.title === "Projects" && (
@@ -148,8 +160,8 @@ DescriptionBox.propTypes = {
   currentItem: PropTypes.shape({
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-    github: PropTypes.string.isRequired,
-    demo: PropTypes.string.isRequired,
+    github: PropTypes.string,
+    demo: PropTypes.string,
   }).isRequired,
   setCurrentItem: PropTypes.func,
 };

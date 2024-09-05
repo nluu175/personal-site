@@ -15,14 +15,9 @@ const ListBox = ({ itemList, setCurrentItem }) => {
     paddingRight: 0,
   };
 
-  const h3Style = {
-    textAlign: "left",
-    fontSize: "2rem",
-  };
-
   return (
     <div style={listBoxStyle}>
-      <h2 style={h3Style}>About Me</h2>
+      {/* <h2 style={h3Style}>About Me</h2> */}
       <div>
         <ul style={listStyle}>
           {itemList.map((item) => (

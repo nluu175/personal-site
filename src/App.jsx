@@ -1,6 +1,4 @@
 import "./App.css";
-import TopOuterBorder from "./components/OuterBorder/TopOuterBorder";
-import BottomOuterBorder from "./components/OuterBorder/BottomOuterBorder";
 import SocialBar from "./components/SocialBar";
 import MainContent from "./components/MainContent/MainContent";
 
@@ -11,9 +9,9 @@ const App = () => {
     display: "grid",
     gridTemplateColumns: "300px auto 300px",
     gridTemplateRows: "300px 200px 250px",
-    gridTemplateAreas: `"top-border . header"
+    gridTemplateAreas: `". . social-bar"
                         "inner-container inner-container inner-container"
-                        ". . bottom-border"`,
+                        ". . ."`,
     width: "100%",
     height: "80vh",
   };
@@ -21,10 +19,9 @@ const App = () => {
   return (
     <div className="main">
       <div className="main-container" style={mainContainerStyle}>
-        <TopOuterBorder />
+        {/* <NavigationBar /> */}
         <SocialBar />
         <MainContent />
-        <BottomOuterBorder />
       </div>
     </div>
   );

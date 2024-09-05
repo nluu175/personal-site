@@ -6,6 +6,8 @@ import PageTitleText from "./PageTitleText";
 
 import { mainInfo } from "../../data/data";
 
+
+
 const MainContent = () => {
   const innerContainerStyle = {
     gridArea: "inner-container",
