@@ -6,8 +6,6 @@ import PageTitleText from "./PageTitleText";
 
 import { mainInfo } from "../../data/data";
 
-
-
 const MainContent = () => {
   const innerContainerStyle = {
     gridArea: "inner-container",
@@ -31,7 +29,11 @@ const MainContent = () => {
         currentItem={currentItem}
         setCurrentItem={setCurrentItem}
       />
-      <ListBox itemList={mainInfo} setCurrentItem={setCurrentItem} />
+      <ListBox
+        itemList={mainInfo}
+        currentItem={currentItem}
+        setCurrentItem={setCurrentItem}
+      />
     </div>
   );
 };

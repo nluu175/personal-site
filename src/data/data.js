@@ -1,13 +1,12 @@
 export const mainInfo = [
   {
-    title: "Welcome",
-    content:
-      "My name is Matthew and I am currently a Junior Software Developer. "
+    title: "About",
+    content: "My name is Matthew and I am a Software Developer. ",
   },
   {
     title: "Bio",
     content:
-      "I've recently graduated from the University of Alberta with a major in Compupter Science." +
+      "I've recently graduated from the University of Alberta (2024) with a major in Compupter Science." +
       "\nI'm pursuing a career in Software Development and currently looking for a position in Software Development/Engineering. " +
       "\nI do have experience with various languages and frameworks but my current focus is on Python, JavaScript, and C#.",
   },
@@ -51,5 +50,13 @@ export const projectsInfo = [
       "\nMade with React, Django and SQLite.",
     demo: "https://www.youtube.com/watch?v=hY4vweyiikY",
     github: "https://github.com/uofa-cmput404/404f23project-404-team-not-found",
+  },
+  {
+    title: "Backlog",
+    content:
+      "A Social Game Backlog Application. " +
+      "\nMade with React, Django and SQLite.",
+    demo: "",
+    github: "https://github.com/nluu175/backlog-server",
   },
 ];

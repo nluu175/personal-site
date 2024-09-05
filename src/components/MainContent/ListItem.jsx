@@ -15,7 +15,7 @@ const ItemBorder = () => {
   return <div style={itemBorderStyle}></div>;
 };
 
-const ListItem = ({ itemData, setCurrentItem }) => {
+const ListItem = ({ itemData, currentItem, setCurrentItem }) => {
   const itemBoxStyle = {
     alignSelf: "flex-start",
   };
@@ -47,6 +47,10 @@ ListItem.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
   }).isRequired,
+  currentItem: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }),
   setCurrentItem: PropTypes.func.isRequired,
 };
 

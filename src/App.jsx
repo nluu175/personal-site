@@ -7,7 +7,7 @@ const App = () => {
 
   const mainContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "300px auto 300px",
+    gridTemplateColumns: "500px auto 500px",
     gridTemplateRows: "300px 200px 250px",
     gridTemplateAreas: `". . social-bar"
                         "inner-container inner-container inner-container"

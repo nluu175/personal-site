@@ -1,7 +1,7 @@
 import ListItem from "./ListItem";
 import PropTypes from "prop-types";
 
-const ListBox = ({ itemList, setCurrentItem }) => {
+const ListBox = ({ itemList, currentItem, setCurrentItem }) => {
   const listBoxStyle = {
     width: "30%",
     height: "400px",
@@ -24,6 +24,7 @@ const ListBox = ({ itemList, setCurrentItem }) => {
             <ListItem
               key={item.content}
               itemData={item}
+              currentItem={currentItem}
               setCurrentItem={setCurrentItem}
             />
           ))}
@@ -38,6 +39,10 @@ ListBox.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
   }).isRequired,
+  currentItem: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }),
   setCurrentItem: PropTypes.func,
 };
 
